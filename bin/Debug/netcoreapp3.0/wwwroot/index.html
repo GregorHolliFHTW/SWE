@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SWE Project</title>
+    <script src="wwwroot/home.js"></script>
+</head>
+
+<body>
+    <h1>SWE Project</h1>
+    <img src="wwwroot/csharp.png">
+    <h2>Navi Search</h2>
+
+    <form action="http://localhost:8080/streetSearch">
+        <div>
+            <label for="street">street:</label>
+            <input name="street" id="street" value="">
+        </div>
+		<div>
+            <label for="postcode">postcode:</label>
+            <input name="postcode" id="postcode" value="">
+        </div>
+		<div>
+            <label for="city">city:</label>
+            <input name="city" id="city" value="">
+        </div>
+        <div>
+            <button>Search</button>
+        </div>
+    </form>
+    <h2>Temperature</h2>
+    <div id="genTemp">
+        <button type="button" onclick="sendGenerateData()">Generate Temps</button>
+    </div>
+    <form action="http://localhost:8080/GetTemperature">
+        <div>
+            <label for="year">Year:</label>
+            <input name="year" id="year" value="">
+        </div>
+        <div>
+            <label for="month">Month:</label>
+            <input name="month" id="month" value="">
+        </div>
+        <div>
+            <label for="day">Day:</label>
+            <input name="day" id="day" value="">
+        </div>
+        <div>
+            <button>Search</button>
+        </div>
+    </form>
+    <h2>ToLower</h2>
+    <div>
+        <label for="text">Text:</label>
+        <input name="text" id="text" value="">
+    </div>
+    <div id="output"></div>
+    <div id="demo">
+        <button type="button" onclick="sendToLower()">ToLower</button>
+    </div>
+</body>
+
+</html>
